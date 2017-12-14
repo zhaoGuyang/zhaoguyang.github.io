@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-14T08:37:44.167Z</updated>
+  <updated>2017-12-14T09:21:11.603Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2017/12/14/Github%20pages%20+%20Hexo%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2017/12/14/Github pages + Hexo 搭建个人博客/</id>
     <published>2017-12-14T09:05:29.000Z</published>
-    <updated>2017-12-14T08:37:44.167Z</updated>
+    <updated>2017-12-14T09:21:11.603Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Github-pages-Hexo-搭建个人博客"><a href="#Github-pages-Hexo-搭建个人博客" class="headerlink" title="Github pages + Hexo 搭建个人博客"></a>Github pages + Hexo 搭建个人博客</h1><p>源于博客：<a href="http://www.jianshu.com/p/189fd945f38f" target="_blank" rel="noopener">http://www.jianshu.com/p/189fd945f38f</a></p><hr><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>名词解释：<br>Github pages: Websites for you and your projects.(官方简介)<br>Hexo: Hexo 是一个快速、简洁且高效的博客框架。什么是博客框架？就是她提供了博客内容之外的一切，你只需要关心内容创作(Markdown语法)即可。Hexo是基于nodejs的实现。</p><p>概念不要混淆，github pages和hexo没有联系，Github pages只是提供web服务来访问你repo中的静态html，仅此。<br>Hexo是可以将你写好的博客内容(Markdown格式)生成html页面，还可以帮你部署到指定的github仓库。</p><hr><h2 id="接下来，do-it"><a href="#接下来，do-it" class="headerlink" title="接下来，do it"></a>接下来，do it</h2><ol><li>安装Git<br>下载地址：<a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">https://git-for-windows.github.io/</a></li><li>安装node.js<br>因为hexo是基于nodejs的，前面说过。<br>访问：nodejs.org</li><li>安装Hexo<br>自行查看官方文档：<a href="https://hexo.io/zh-cn/docs/#安装" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/#安装</a><br>官方采用npm来安装，如果被墙可以自己想招或者试用淘宝npm镜像(叫做cnpm)<br>官方教程：<a href="https://npm.taobao.org/" target="_blank" rel="noopener">https://npm.taobao.org/</a><br>安装cnpm之后，再按照Hexo安装步骤来，只不过将npm命令换成cnpm。</li></ol><hr><h2 id="关于Hexo自动部署"><a href="#关于Hexo自动部署" class="headerlink" title="关于Hexo自动部署"></a>关于Hexo自动部署</h2><p>Hexo最常用的配置文件：_config.yml加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repository: 你的repo地址</span><br><span class="line">  branch: 你的分支，默认master</span><br></pre></td></tr></table></figure></p><p>下面来写一篇博客发布下：<br>要知道，博客都是md文件，md是markdown的缩写。存放在：”Hexo目录/source/_posts/*.md”。<br>创建:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;blog title&quot;</span><br></pre></td></tr></table></figure></p><p>会发现在”Hexo目录\source_posts\”目录下多了一个文件”blog title.md”。这就是一篇博客了，内容你定。</p><h2 id="怎么发布？"><a href="#怎么发布？" class="headerlink" title="怎么发布？"></a>怎么发布？</h2><ol><li>安装一个插件：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li></ol><ol><li><p>设置git身份信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;你的用户名&quot;</span><br><span class="line">$ git config --global user.email &quot;你的邮箱&quot;</span><br></pre></td></tr></table></figure></li><li><p>部署</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure></li></ol><hr><p>发布成功后，访问yourname.github.io看下成果，有问题留言交流。</p>]]></content>
     
@@ -35,8 +35,6 @@
     </summary>
     
       <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="Github pages + Hexo 搭建个人博客" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/Github-pages-Hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
       <category term="github pages" scheme="http://yoursite.com/tags/github-pages/"/>
@@ -52,7 +50,7 @@
     <link href="http://yoursite.com/2017/12/12/say-hi/"/>
     <id>http://yoursite.com/2017/12/12/say-hi/</id>
     <published>2017-12-12T09:05:29.000Z</published>
-    <updated>2017-12-14T02:42:51.552Z</updated>
+    <updated>2017-12-14T09:21:05.137Z</updated>
     
     <content type="html"><![CDATA[<p>摘要:<br><a id="more"></a><br>正文:</p><p>testtest</p>]]></content>
     
@@ -63,8 +61,6 @@
     </summary>
     
       <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="二级目录" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95/"/>
     
     
       <category term="hello" scheme="http://yoursite.com/tags/hello/"/>
@@ -78,11 +74,13 @@
     <link href="http://yoursite.com/2017/12/12/hello-world-1/"/>
     <id>http://yoursite.com/2017/12/12/hello-world-1/</id>
     <published>2017-12-12T09:04:17.000Z</published>
-    <updated>2017-12-12T09:04:17.202Z</updated>
+    <updated>2017-12-14T09:21:21.102Z</updated>
     
     <summary type="html">
     
     </summary>
+    
+      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
     
     
   </entry>
@@ -92,7 +90,7 @@
     <link href="http://yoursite.com/2017/12/12/hello-world/"/>
     <id>http://yoursite.com/2017/12/12/hello-world/</id>
     <published>2017-12-12T08:52:53.683Z</published>
-    <updated>2017-12-12T08:52:53.684Z</updated>
+    <updated>2017-12-14T09:21:26.416Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -104,6 +102,8 @@
       
     
     </summary>
+    
+      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
     
     
   </entry>
